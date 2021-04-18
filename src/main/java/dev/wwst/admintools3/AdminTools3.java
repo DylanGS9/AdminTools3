@@ -73,7 +73,7 @@ public final class AdminTools3 extends JavaPlugin {
             if (this.getDescription().getVersion().equalsIgnoreCase(version)) {
                 getLogger().info("You are up to date!");
             } else {
-                getLogger().info("!!! There is a new update available! Download at https://www.spigotmc.org/resources/admintools.76747/ !!!");
+                getLogger().info("There is a new update available! Download at https://www.spigotmc.org/resources/admintools.76747/ !!!");
             }
         });
     }
@@ -83,7 +83,7 @@ public final class AdminTools3 extends JavaPlugin {
         for(PlayerDataStorage pds : toSave) {
             pds.save();
         }
-        getLogger().log(Level.INFO, "AdminTools3 was disabled.");
+        getLogger().log(Level.INFO, "Admin Tools was disabled.");
     }
 
     public static AdminTools3 getInstance() {
